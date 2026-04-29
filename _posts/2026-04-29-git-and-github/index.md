@@ -40,6 +40,7 @@ _Functions:_
 
 
 # 5. Git 환경 설정 (Environment Setup)
+
 ```bash
 # Check current user name
 git config --global user.name 
