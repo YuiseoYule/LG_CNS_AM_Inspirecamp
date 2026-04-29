@@ -40,7 +40,6 @@ _Functions:_
 
 
 # 5. Git 환경 설정 (Environment Setup)
-To identify who is making commits, run the following commands:
 ```bash
 # Check current user name
 git config --global user.name 
@@ -56,6 +55,7 @@ git config --global user.email "yule.yuiseo@gmail.com"
 
 #global preference for naming of the primary branch
 git config --global init.defaultBranch main
+```
 
 #Explanation
 - git config: The tool used to set configuration variables that control how Git looks and operates.
