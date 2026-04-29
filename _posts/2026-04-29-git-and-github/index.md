@@ -37,3 +37,20 @@ _Functions:_
 ![Sourcetree](./SourceTree.png)
 ...
 - GUI tool for git version control.
+
+
+# 5. Git 환경 설정 (Environment Setup)
+To identify who is making commits, run the following commands:
+```bash
+# Check current user name
+git config --global user.name 
+
+# Set user name
+git config --global user.name "YuiseoYule" 
+
+# Check current user email
+git config --global user.email 
+
+# Set user email
+git config --global user.email "yule.yuiseo@gmail.com"
+
