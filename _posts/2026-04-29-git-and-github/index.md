@@ -30,3 +30,10 @@ _Functions:_
 - Efficiency: Automated syncing.
 - Safety: History tracking.
 - Scalability: Managing complexity.
+
+
+# 5. Sourcetree
+...
+![Sourcetree](./SourceTree.png)
+...
+- GUI tool for git version control.
