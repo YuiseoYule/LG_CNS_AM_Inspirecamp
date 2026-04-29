@@ -1,0 +1,37 @@
+# ==========================================
+# 1. SITE IDENTITY
+# ==========================================
+title: "Hwang Yunseo | My TIL for InspireCamp"
+description: "Daily documentation of theory and engineering practice"
+theme: minima
+
+# ==========================================
+# 2. FOLDER & CONTENT RULES
+# ==========================================
+# This section ensures Jekyll processes your subfolders within _posts
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# ==========================================
+# 3. FILE INCLUSION (The "Code" Rule)
+# ==========================================
+# Jekyll normally ignores non-markdown files in _posts. 
+# This rule forces it to include your Python, SQL, and Image files.
+include:
+  - "_posts/**/*.py"
+  - "_posts/**/*.sql"
+  - "_posts/**/*.png"
+  - "_posts/**/*.jpg"
+
+# ==========================================
+# 4. DEFAULT SETTINGS
+# ==========================================
+# This automatically applies the 'post' layout to everything in _posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
