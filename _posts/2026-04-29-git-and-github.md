@@ -34,13 +34,12 @@ _Functions:_
 
 # 5. Sourcetree
 ...
-![Sourcetree](./SourceTree.png)
+![Sourcetree](/assets/2026-04-29-git-and-github/SourceTree.png)
 ...
 - GUI tool for git version control.
 
 
-# 5. Git 환경 설정 (Environment Setup)
-
+# 6. Git 환경 설정 (Environment Setup)
 ```bash
 # Check current user name
 git config --global user.name 

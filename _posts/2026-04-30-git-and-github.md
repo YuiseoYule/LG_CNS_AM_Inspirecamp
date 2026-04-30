@@ -49,4 +49,4 @@ categories: TIL
 
 Upload the YAML files and verify the repository state using SourceTree.
 
-📂 [Practice Files](./practice/)
+📂 [Practice Files](/assets/2026-04-30-git-and-github/Practice/)
