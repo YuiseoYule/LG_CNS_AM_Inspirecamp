@@ -17,21 +17,11 @@ collections:
 # ==========================================
 # 3. FILE INCLUSION (The "Code" Rule)
 # ==========================================
-# Jekyll normally ignores non-markdown files in _posts. 
-# This rule forces it to include your Python, SQL, and Image files.
+# This rule forces Jekyll to include your Practice files and Images
+# as static assets without attempting to parse them as text.
 include:
   - "_posts/**/*.py"
   - "_posts/**/*.sql"
   - "_posts/**/*.png"
   - "_posts/**/*.jpg"
-
-# ==========================================
-# 4. DEFAULT SETTINGS
-# ==========================================
-# This automatically applies the 'post' layout to everything in _posts
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+  - "_posts/**/*.yaml"
