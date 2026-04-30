@@ -1,56 +1,52 @@
 ---
 layout: post
-title: "What is Git and GitHub?"
-date: 2026-04-29
+title: "Git and GitHub: Additional Explanations"
+date: 2026-04-30
 categories: TIL
 ---
 
-# 1. Definition of VCS
-A Version Control System records changes over time.
+## 💻 Git Commands in Local
 
-_Key Features:_
-- Time Travel: Revert to previous states.
-- Branching: Work on independent lines.
+| Command | Description |
+| :--- | :--- |
+| `git status` | Check the current status of the working tree and staging area. |
+| `git init` | Initialize a new local repository. |
+| `git add` | Stage files for a commit (place them in the staging area). |
+| `git commit` | Record staged changes as a new version. |
+| `git log` | View the commit history. |
+| `git branch` | Create a new branch. |
+| `git merge` | Merge a branch into the current branch. |
+| `git checkout` | Switch to a specific branch. |
 
-# 2. Distributed VCS
-Git is a DVCS where every local repo has full history.
+---
 
-_Advantages:_
-- Offline Operations: Commit and branch without internet.
-- Redundancy: Full backups on every client.
+## 🌐 GitHub in Remote
 
-# 3. GitHub
-A cloud service for Git repositories.
+*   **Repository:** A digital storage structure that tracks the entire evolutionary history of a project's files.
+*   **Fork:** Create a personal copy of another user's repository.
+*   **Pull Request (PR):** A request to merge changes from a local repository into a remote repository on GitHub.
+*   **Issue:** A tracking board used to manage bugs, tasks, or improvements.
+*   **Actions:** A CI/CD (Continuous Integration and Continuous Deployment) tool that automates workflows from build to deployment.
 
-_Functions:_
-- Sharing: Team access to code.
-- Conflict Resolution: Tools for merging.
+---
 
-# 4. Necessity
-- Efficiency: Automated syncing.
-- Safety: History tracking.
-- Scalability: Managing complexity.
+## 📚 Additional Knowledge: Rules of `git pull`
 
+**Scenario:**
+> *   **Remote:** Contains file `A'` (a new version of file `A`).
+> *   **Local:** Contains file `A` (the old version) and file `B`.
 
-# 5. Sourcetree
-...
-![Sourcetree](./SourceTree.png)
-...
-- GUI tool for git version control.
+**Q1: Between `A'` and `A`, which one is selected during a pull?**  
+**Conflict Resolution (`A` vs. `A'`):** Git does not automatically "select" one version over the other; it attempts a three-way merge. If the changes in `A'` and `A` occur in different sections of the file, Git integrates both. However, if the changes overlap on the same lines, Git declares a "merge conflict," halting the process until the user manually chooses which content to keep.
 
+**Q2: If I pull `A'` into my local repository, will the remote version `A'` subsequently revert to `A`?**  
+**Directionality of Data:** The pull command is unidirectional, moving data from the remote repository to the local one. Executing a pull will update your local `A` to match the state of `A'` (or a merged version of both), but it has zero effect on the remote files hosted on GitHub.  
+**Remote State Stability:** The remote version `A'` remains unchanged until a `git push` is successfully executed from a local machine.
 
-# 5. Git 환경 설정 (Environment Setup)
-To identify who is making commits, run the following commands:
-```bash
-# Check current user name
-git config --global user.name 
+---
 
-# Set user name
-git config --global user.name "YuiseoYule" 
+## 🛠️ Practice
 
-# Check current user email
-git config --global user.email 
+Upload the YAML files and verify the repository state using SourceTree.
 
-# Set user email
-git config --global user.email "yule.yuiseo@gmail.com"
-
+📂 [Practice Files](./practice/)
