@@ -19,6 +19,17 @@ categories: TIL
 | `git checkout` | Switch to a specific branch. |
 
 ---
+## 💻 Git Commands for Remote Sync
+
+| Command | Description |
+| :--- | :--- |
+| `git remote -v` | Verify the remote configuration and ensure the local project is linked to the correct repository. |
+| `git fetch origin` | Download the latest metadata and information from the remote without merging it into the current work. |
+| `git merge origin/main` | Combine the fetched changes from the remote branch into the current local branch. |
+| `git pull origin main` | Execute both fetching and merging in a single command to update the local branch. |
+| `git add` & `git commit` | Stage and record the resolved changes if a conflict occurred during the merge process. |
+
+---
 
 ## 🌐 GitHub in Remote
 
