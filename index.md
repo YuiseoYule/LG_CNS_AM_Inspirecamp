@@ -15,3 +15,12 @@ This is my TIL for learning for LG CNS AMINSPIRECAMP
     </li>
   {% endfor %}
 </ul>
+
+
+<ul>
+  {% for note in site.notes %}
+    <li>
+      <a href="{{ note.url | relative_url }}">{{ note.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
