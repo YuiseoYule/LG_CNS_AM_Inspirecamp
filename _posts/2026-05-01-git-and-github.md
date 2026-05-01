@@ -4,6 +4,39 @@ title: "Git and GitHub: Synchronization and Terminology"
 date: 2026-05-01
 categories: TIL
 ---
+# Today's lecture
+
+## 💻 Git Commands in Local
+
+### **`git commit -am "message"`**
+*   **The `-m` Flag**: This stands for "message." It allows you to write the commit log directly in the command line instead of opening a text editor. It only commits files that are already in the **Staging Area** (files you have already run `git add` on).
+*   **The `-am` Flag**: This is a combination of `-a` (all) and `-m`. It automatically **stages** every file that is already being tracked by Git and has been modified or deleted, then commits them.
+*   **The Key Difference**: `-am` cannot stage **new (untracked)** files. If you create a brand new file, you must use `git add` before you can commit it.
+
+
+
+### **`git reset --hard [commit_hash]`**
+*   **The Meaning**: This command "resets" your current project to a specific point in history. The `--hard` flag is the most direct; it changes your Commit History, your Staging Area, and your Actual Files (Working Directory) to match the state of the specified hash. Any work not committed will be permanently lost.
+*   **The Default Value**: If you do not provide a `[commit_hash]` and simply run `git reset --hard`, the default target is **`HEAD`**.
+*   **Effect of Default**: Running `git reset --hard` (without a hash) will discard all local changes you've made since your last commit, returning your code to exactly how it looked at the most recent commit point.
+
+---
+
+## 🔄 Undo Operations
+
+*   **`git revert [commit_hash]`**: Creates a **new commit** that introduces the exact opposite changes of the specified commit. This effectively undoes the effects of that commit while preserving history.
+*   **`git revert --no-commit [commit_hash]`**: Applies the inverse changes of the specified commit to the working directory and staging area but does **not** automatically create a new commit, allowing for further manual adjustments.
+
+
+
+---
+
+## 📂 File Removal
+
+*   **`git rm [file_path]`**: Removes a file from both the working directory and the staging area.
+*   **Note on Pathing**: If the file is inside a subdirectory, you must provide the full path relative to the repository root (e.g., `git rm assets/2026-05-01-git-and-github/lions.yaml`).
+
+---
 
 
 
@@ -51,3 +84,4 @@ In **Distributed Version Control System (DVCS)** principles, `git fetch` is the 
 Sync the latest metadata and verify the `origin/main` status using SourceTree.
 
 📂 [Practice Files](https://github.com/YuiseoYule/LG_CNS_AM_Inspirecamp/tree/main/assets/2026-05-01-git-and-github/Practice/)
+![Sourcetree]({{ site.baseurl }}/assets/2026-05-21-git-and-github/Sourcetree Practice.png)...
