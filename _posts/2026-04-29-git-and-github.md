@@ -34,8 +34,7 @@ _Functions:_
 
 # 5. Sourcetree
 ...
-![Sourcetree](yuiseoyule.github.io/LG_CNS_AM_Inspirecamp/assets/2026-04-29-git-and-github/SourceTree.png)
-...
+![Sourcetree]({{ site.baseurl }}/assets/2026-04-29-git-and-github/SourceTree.png)...
 - GUI tool for git version control.
 
 
