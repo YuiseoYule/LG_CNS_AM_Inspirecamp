@@ -1,0 +1,33 @@
+Core Architecture & Hosting
+Engine: Jekyll (Static Site Generator).
+
+Hosting Platform: GitHub Pages.
+
+Theme: minima.
+
+Deployment: Automated via GitHub Actions upon pushing to your repository.
+
+Identity & Repository
+Git Username: YuiseoYule
+
+Git Email: yule.yuiseo@gmail.com
+
+Default Branch: main
+
+Directory Structure
+Design Pattern: "Daily Unit" (구획) encapsulation to keep theoretical notes and practical code tightly bound.
+
+Theory Path: _posts/YYYY-MM-DD-topic/index.md (Contains Markdown, explanations, and embedded snippets).
+
+Practice Path: _posts/YYYY-MM-DD-topic/practice/ (Contains executable engineering scripts and datasets).
+
+Visual Assets: Images are stored directly in the post or practice folders and linked relatively (e.g., ./SourceTree.png).
+
+Configuration Rules (_config.yml)
+Site Title: "Hwang Yunseo | My TIL for InspireCamp"
+
+Permalinks: Configured chronologically as /:year/:month/:day/:title/.
+
+Asset Passthrough: Explicit inclusion rules force the compiler to track .py, .sql, .png, .jpg, and .yaml files as static assets.
+
+Layouts: Global layout defaults are disabled to prevent UTF-8 encoding crashes. Page layouts are handled individually via YAML Front Matter (layout: post) at the top of each Markdown file.
