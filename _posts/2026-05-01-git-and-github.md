@@ -94,4 +94,6 @@ In **Distributed Version Control System (DVCS)** principles, `git fetch` is the 
 Sync the latest metadata and verify the `origin/main` status using SourceTree.
 
 📂 [Practice Files](https://github.com/YuiseoYule/LG_CNS_AM_Inspirecamp/tree/main/assets/2026-05-01-git-and-github/Practice/)
-![Sourcetree]({{ site.baseurl }}/assets/2026-05-21-git-and-github/Sourcetree Practice.png)...
+
+
+![Sourcetree]({{ site.baseurl }}/assets/2026-05-01-git-and-github/Sourcetree Practice.png)...
