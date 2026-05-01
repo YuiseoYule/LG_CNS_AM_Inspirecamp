@@ -8,6 +8,16 @@ categories: TIL
 
 ## 💻 Git Commands in Local
 
+| Command | Action | Key Detail |
+| :--- | :--- | :--- |
+| `git commit -m` | Commit staged changes | Requires `git add` first. |
+| `git commit -am` | Stage & commit tracked files | **Cannot** stage new (untracked) files. |
+| `git reset --hard` | Reset to a specific state | Defaults to `HEAD`; **permanently** deletes uncommitted work. |
+| `git revert` | Undo a specific commit | Creates a **new** commit; safe for public history. |
+| `git revert --no-commit` | Apply inverse changes | Workspace changes only; does not record a commit automatically. |
+| `git rm` | Remove file | Deletes from both the working directory and staging area. |
+
+
 ### **`git commit -am "message"`**
 *   **The `-m` Flag**: This stands for "message." It allows you to write the commit log directly in the command line instead of opening a text editor. It only commits files that are already in the **Staging Area** (files you have already run `git add` on).
 *   **The `-am` Flag**: This is a combination of `-a` (all) and `-m`. It automatically **stages** every file that is already being tracked by Git and has been modified or deleted, then commits them.
