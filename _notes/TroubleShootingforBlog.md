@@ -5,7 +5,9 @@ date: 2026-05-01
 categories: TIL
 ---
 
-## 🔍 GitHub Pages 404 Error on Directory Links
+# Problem in content
+
+## 🛠️ GitHub Pages 404 Error on Directory Links
 
 *   **Symptom:** PNG images, specifically `SourceTree.png`, displayed correctly in the GitHub repository preview but failed to render on the live Jekyll blog site.
 *   **Context/Environment:** GitHub Pages hosting using the Minima theme, with Markdown files following a "Daily Unit" directory structure within the `_posts` folder.
@@ -25,6 +27,8 @@ categories: TIL
 * **System Rule (Takeaway):** Distinguish between Local Preview Logic and Production Static Routing. Use absolute remote URLs for repository browsing to ensure link persistence across environments.
 
 
+# Using other title format
+
 ## 🛠️ Jekyll _posts Filename Constraints
 
 *   **Symptom:** Markdown files uploaded to the `_posts` directory (e.g., `TroubleShootingforBlog.md`) are ignored by the Jekyll engine and do not appear in the site's post list.
@@ -33,6 +37,13 @@ categories: TIL
 *   **Resolution:** To bypass this hardcoded behavior, you must move the files to a Custom Collection (e.g., a folder named `_notes`) and register it in `_config.yml`, or rename the files to match the mandatory date-prefix standard.
 *   **System Rule (Takeaway):** The `_posts` directory is an opinionated structure that cannot be reconfigured to accept arbitrary filenames; use Collections for flexible, non-dated technical documentation.
 
+## 🛠️ Troubleshooting: Missing Template Logic for Custom Collections
+
+*   **Symptom**: The troubleshooting file is correctly configured and placed in the `_notes` directory, but it is not rendering on the home page.
+*   **Context/Environment**: `index.md` Liquid template, Jekyll custom collections.
+*   **Root Cause**: The current `index.md` file only executes a loop for `site.posts`. Because the file is located in the `_notes` directory, the Jekyll compiler assigns it to the `site.notes` data array, which the front-end template lacks instructions to access.
+*   **Resolution**: Add a second Liquid loop to `index.md` specifically targeting the `site.notes` variable to display the collection's payload.
+*   **System Rule (Takeaway)**: **Data Structure Mapping**. Defining a backend data collection in `_config.yml` does not automatically render it; the front-end view must explicitly call the corresponding collection variable.
 
 
 
