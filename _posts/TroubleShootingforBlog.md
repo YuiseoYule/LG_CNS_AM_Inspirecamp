@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Which trouble did I suffered from this blog organizing"
-date: 2026-05-01 - 2026-05-01
+date: 2026-05-01
 categories: TIL
 ---
 
