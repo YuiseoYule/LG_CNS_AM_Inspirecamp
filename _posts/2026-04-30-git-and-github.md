@@ -49,4 +49,4 @@ categories: TIL
 
 Upload the YAML files and verify the repository state using SourceTree.
 
-📂 [Practice Files](https://github.com/YuiseoYule/LG_CNS_AM_Inspirecamp/tree/main/_posts/2026-04-30-git-and-github/practice/)
+📂 [Practice Files](https://github.com/YuiseoYule/LG_CNS_AM_Inspirecamp/tree/main/assets/2026-04-30-git-and-github/practice/)
