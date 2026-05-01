@@ -14,6 +14,10 @@ collections:
     output: true
     permalink: /:year/:month/:day/:title/
 
+collections:
+  notes:
+    output: true
+
 # ==========================================
 # 3. FILE INCLUSION (The "Code" Rule)
 # ==========================================
