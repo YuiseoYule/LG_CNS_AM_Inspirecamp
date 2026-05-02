@@ -71,3 +71,13 @@ Sync the latest metadata and verify the `origin/main` status using SourceTree.
 
 ![Sourcetree]({{ site.baseurl }}/assets/2026-05-02-git-and-github/SourcetreePractice2.png)...
 
+---
+
+## 🛠️ Remote History Conflict during Push to GitHub
+
+*   **Symptom:** The `git push` command was rejected with a `[rejected] main -> main (fetch first)` error, preventing local commits from being uploaded to the GitHub repository.
+*   **Context/Environment:** Local Git repository, GitHub Remote (https://github.com/YuiseoYule/LG_CNS_AM_Inspirecamp.git), `main` branch.
+*   **Root Cause:** The remote repository contains commits that do not exist in the local history. This typically occurs when changes are made directly on the GitHub web interface or pushed from a different local environment, creating a diverged history that prevents a "fast-forward" merge.
+*   **Resolution:** Executed `git pull origin main` to integrate remote changes into the local branch, resolved any resulting merge conflicts, and then proceeded with `git push`.
+*   **System Rule (Takeaway):** Always perform a `git pull` or `git fetch` before starting new work or pushing changes to ensure the local head is synchronized with the remote upstream.
+
