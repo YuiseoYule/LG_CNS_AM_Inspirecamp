@@ -67,5 +67,6 @@ Sync the latest metadata and verify the `origin/main` status using SourceTree.
 
 
 ![Sourcetree]({{ site.baseurl }}/assets/2026-05-02-git-and-github/SourcetreePractice.png)...
+
 ![Sourcetree]({{ site.baseurl }}/assets/2026-05-02-git-and-github/SourcetreePractice2.png)...
 
