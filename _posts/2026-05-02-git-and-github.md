@@ -6,7 +6,6 @@ categories: TIL
 ---
 # Today's lecture
 
-## 💻 Git Commands in Local
 
 ## 💻 Git Branching Commands
 
@@ -36,7 +35,9 @@ categories: TIL
 **`git log` (The "Linear" View):** This only shows the commits belonging to the branch you are currently on. It provides a simple, chronological list of your local progress.
 
 **`git log --all --graph` (The "Tree" View):** This shows the information for every branch. The `--graph` flag draws lines to visualize how different branches diverge and merge, providing a map of the entire repository.
+
 ---
+
 ## 📚 Deep Dive: `git merge` vs. `git rebase`
 
 **Scenario:**
