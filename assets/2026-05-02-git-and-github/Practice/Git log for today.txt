@@ -1,0 +1,156 @@
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    assets/2026-05-01-git-and-github/lions.yaml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        assets/2026-05-01-git-and-github/eagles.yaml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git add .
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   assets/2026-05-01-git-and-github/Git status.png
+        new file:   assets/2026-05-01-git-and-github/eagles.yaml
+        deleted:    assets/2026-05-01-git-and-github/lions.yaml
+
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git commit -m lions and modified tigers new eagles
+error: pathspec 'and' did not match any file(s) known to git
+error: pathspec 'modified' did not match any file(s) known to git
+error: pathspec 'tigers' did not match any file(s) known to git
+error: pathspec 'new' did not match any file(s) known to git
+error: pathspec 'eagles' did not match any file(s) known to git
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git commit -m "lions and modified tigers new eagles"
+[main 62c4774] lions and modified tigers new eagles
+ 3 files changed, 8 insertions(+), 8 deletions(-)
+ create mode 100644 assets/2026-05-01-git-and-github/Git status.png
+ create mode 100644 assets/2026-05-01-git-and-github/eagles.yaml
+ delete mode 100644 assets/2026-05-01-git-and-github/lions.yaml
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git commit -am "changing tigers"
+[main aecfed0] changing tigers
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+
+
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git reset --hard 90a72ed5984644ed3cc740a0bbfaa6919f433036
+HEAD is now at 90a72ed Create _config.yml
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git log
+commit 90a72ed5984644ed3cc740a0bbfaa6919f433036 (HEAD -> main)
+Author: YuiseoYule <yule.yuiseo@gmail.com>
+Date:   Wed Apr 29 18:46:11 2026 +0900
+
+    Create _config.yml
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Basic_Info_for_Blog.txt
+        modified:   _config.yml
+        deleted:    _notes/TroubleShootingforBlog.md
+        deleted:    _notes/a.txt
+        deleted:    _posts/2026-04-29-git-and-github.md
+        deleted:    _posts/2026-04-30-git-and-github.md
+        deleted:    _posts/2026-05-01-git-and-github.md
+        deleted:    _posts/TroubleShootingforBlog.md
+        deleted:    assets/2026-04-29-git-and-github/SourceTree.png
+        deleted:    assets/2026-04-30-git-and-github/Practice/SourcetreePractice.png
+        deleted:    assets/2026-04-30-git-and-github/Practice/lions.yaml
+        deleted:    assets/2026-04-30-git-and-github/Practice/tigers.yaml
+        deleted:    assets/2026-05-01-git-and-github/Git status.png
+        deleted:    assets/2026-05-01-git-and-github/eagles.yaml
+        deleted:    assets/2026-05-01-git-and-github/tigers.yaml
+        deleted:    how origin
+        deleted:    index.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        assets/2026-05-01-git-and-github/Sourcetree Practice.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git log
+commit aecfed0af1ddf1af5f5513a9d081a26c99b72815 (HEAD -> main)
+Author: YuiseoYule <yule.yuiseo@gmail.com>
+Date:   Fri May 1 20:13:35 2026 +0900
+
+    changing tigers
+
+commit 62c477436ac8454fba0b092e75fe50ce60328da1
+Author: YuiseoYule <yule.yuiseo@gmail.com>
+Date:   Fri May 1 20:08:00 2026 +0900
+
+    lions and modified tigers new eagles
+
+commit ef496b994030ad7bfd680d9ee36575f1c70d81ab
+Author: YuiseoYule <yule.yuiseo@gmail.com>
+Date:   Fri May 1 19:51:53 2026 +0900
+
+    0501Practice before
+
+
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git reset --hard
+HEAD is now at aecfed0 changing tigers
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git revert 62c477436ac8454fba0b092e75fe50ce60328da1
+hint: Waiting for your editor to close the file... unix2dos: converting file C:/Users/PC/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp/.git/COMMIT_EDITMSG to DOS format...
+dos2unix: converting file C:/Users/PC/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp/.git/COMMIT_EDITMSG to Unix format...
+[main 6d20085] Revert "lions and modified tigers new eagles"
+ 3 files changed, 8 insertions(+), 8 deletions(-)
+ delete mode 100644 assets/2026-05-01-git-and-github/Git status.png
+ delete mode 100644 assets/2026-05-01-git-and-github/eagles.yaml
+ create mode 100644 assets/2026-05-01-git-and-github/lions.yaml
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ :
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git rm lions.yaml
+fatal: pathspec 'lions.yaml' did not match any files
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git rm assets/2026-05-01-git-and-github/lions.yaml
+rm 'assets/2026-05-01-git-and-github/lions.yaml'
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git revert --no-commit 6d20085bb5cb5c4252a3008685d9ac244bb91a2c 
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main|REVERTING)
+$ git reset --hard
+HEAD is now at 6d20085 Revert "lions and modified tigers new eagles"
