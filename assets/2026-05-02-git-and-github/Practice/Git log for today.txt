@@ -153,3 +153,46 @@ and have 4 and 7 different commits each, respectively.
   (use "git pull" if you want to integrate the remote branch with yours)
 
 PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (team-members|MERGING)
+$ git rebase main
+error: cannot rebase: Your index contains uncommitted changes.
+error: Please commit or stash them.
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (team-members|MERGING)
+$ git add .
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (team-members|MERGING)
+$ git commit -m "hi"
+[team-members 5ebd1e5] hi
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (team-members)
+$ git rebase main
+Successfully rebased and updated refs/heads/team-members.
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (team-members)
+$ git switch main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 7 and 7 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git merge team-members
+Updating 4cec0eb..9c657fe
+Fast-forward
+ .../2026-05-02-git-and-github/Practice/Bics.yaml   |   8 ++
+ .../Practice/Git log for today.txt                 | 116 ++++++++++++++++++++-
+ .../2026-05-02-git-and-github/Practice/eagles.yaml |   8 ++
+ .../SourcetreePractice.png                         | Bin 0 -> 122117 bytes
+ 4 files changed, 131 insertions(+), 1 deletion(-)
+ create mode 100644 assets/2026-05-02-git-and-github/Practice/Bics.yaml
+ create mode 100644 assets/2026-05-02-git-and-github/Practice/eagles.yaml
+ create mode 100644 assets/2026-05-02-git-and-github/SourcetreePractice.png
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git branch -d team-members
+Deleted branch team-members (was 9c657fe).
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
