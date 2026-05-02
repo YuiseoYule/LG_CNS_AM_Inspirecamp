@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Git and GitHub: Synchronization and Terminology"
+title: "Git and GitHub: How can we manage branches?"
 date: 2026-05-02
 categories: TIL
 ---
