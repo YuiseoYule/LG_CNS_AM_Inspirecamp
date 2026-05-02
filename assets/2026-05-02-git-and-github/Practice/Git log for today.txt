@@ -39,3 +39,117 @@ $ git commit -m "add Alicia"
  create mode 100644 assets/2026-05-02-git-and-github/Practice/Git log for today.txt
  create mode 100644 assets/2026-05-02-git-and-github/Practice/lions.yaml
  create mode 100644 assets/2026-05-02-git-and-github/Practice/tigers.yaml
+ 
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ 
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git switch ad-coach
+M       assets/2026-05-02-git-and-github/Practice/tigers.yaml
+Switched to branch 'ad-coach'
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (ad-coach)
+$ git branch team-members
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (ad-coach)
+$ git switch main
+M       assets/2026-05-02-git-and-github/Practice/tigers.yaml
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 3 and 6 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git add .
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git commit -m "add alex"
+[main d382513] add alex
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git switch ad-coach
+Switched to branch 'ad-coach'
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (ad-coach)
+$ git add .
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (ad-coach)
+$ git commit -m "add coach to lions"
+[ad-coach 6fea097] add coach to lions
+ 1 file changed, 1 insertion(+)
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (ad-coach)
+$ git commit -m "add coach to tigers"
+On branch ad-coach
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   assets/2026-05-02-git-and-github/Practice/tigers.yaml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (ad-coach)
+$ git add .
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (ad-coach)
+$ git commit -m "add coach to tigers"
+[ad-coach 4b92cf5] add coach to tigers
+ 1 file changed, 1 insertion(+)
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (ad-coach)
+$ git switch team-members
+Switched to branch 'team-members'
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (team-members)
+$ git add .
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (team-members)
+$ git commit -m "add eagles"
+[team-members 774ad14] add eagles
+ 1 file changed, 8 insertions(+)
+ create mode 100644 assets/2026-05-02-git-and-github/Practice/eagles.yaml
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (team-members)
+$ git add .
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (team-members)
+$ git commit -m "add Bics"
+[team-members 3bd6515] add Bics
+ 1 file changed, 8 insertions(+)
+ create mode 100644 assets/2026-05-02-git-and-github/Practice/Bics.yaml
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (team-members)
+$ git log
+commit 3bd6515bc94baf841109545606409806fff167e1 (HEAD -> team-members)
+Author: YuiseoYule <yule.yuiseo@gmail.com>
+Date:   Sat May 2 20:35:02 2026 +0900
+
+    add Bics
+
+commit 774ad144b0ab3253749178dd408c85ff946684f3
+Author: YuiseoYule <yule.yuiseo@gmail.com>
+Date:   Sat May 2 20:34:10 2026 +0900
+
+    add eagles
+
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (team-members)
+$ git --all --decorate --oneline --graph
+unknown option: --all
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (team-members)
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (team-members)
+$ git switch main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 4 and 7 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
