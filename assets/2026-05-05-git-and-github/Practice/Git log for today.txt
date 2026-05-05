@@ -112,3 +112,15 @@ git: 'swtich' is not a git command. See 'git --help'.
 
 The most similar command is
         switch
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (conflict02)
+$ git switch main 
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+PC@DESKTOP-9LVDORB MINGW64 ~/Desktop/Dev/LG_CNS_AM_Inspirecamp/LG_CNS_AM_Inspirecamp (main)
+$ git merge conflict01
+Auto-merging assets/2026-05-02-git-and-github/Practice/tigers.yaml
+CONFLICT (content): Merge conflict in assets/2026-05-02-git-and-github/Practice/tigers.yaml
+Automatic merge failed; fix conflicts and then commit the result.
