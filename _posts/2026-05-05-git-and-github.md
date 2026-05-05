@@ -1,0 +1,62 @@
+---
+layout: post
+title: "Git and GitHub: How can I collaborate with github?"
+date: 2026-05-05
+categories: TIL
+---
+# Today's lecture
+
+
+## 💻 🛠 Git Recovery & Remote Management Comands
+
+
+| Command | Action | Key Detail |
+| :--- | :--- | :--- |
+| `git merge --abort` | Terminate merge | Resets the repository to the state before the merge started. |
+| `git rebase --abort` | Terminate rebase | Stops the rebase and returns to the original commit history. |
+| `git remote` | Inspect remotes | Lists the aliases for connected remote repositories. |
+| `git clone [url]` | Initialize & Copy | Creates a local copy of a remote repo and sets up `origin`. |
+
+---
+## 1. Primary Causes of Conflicts
+Conflicts occur when Git cannot automatically reconcile differences between two commits.
+
+*   **Same Line Modification**: Two branches modify the exact same line(s) in a file with different content.
+*   **File Deletion vs. Modification**: One branch deletes a file while another branch modifies it.
+*   **Rebase Context**: Git applies commits sequentially. If the base branch has changes in the same areas, every individual commit in the rebase chain may trigger a conflict.
+
+---
+
+## 2. Conflict Scenarios: Merge vs. Rebase
+The method of integration determines how frequently you must interact with the conflict.
+
+| Feature | Merge (Single Resolution) | Rebase (Sequential) |
+| :--- | :--- | :--- |
+| **Process** | Combines the tips of two branches. | Rewrites history by moving the branch base. |
+| **Conflict Frequency** | Appears once during the merge commit creation. | Can occur multiple times (once per commit). |
+| **Resolution** | Resolve all differences in one go. | Resolve conflicts for each commit being relocated. |
+
+---
+
+## 📚 Deep Dive: `origin` vs. `main`
+
+**Q1: What exactly is `origin`?**
+**`origin` (The Remote Alias):** A shorthand name for your remote repository URL. It acts as a handle for the server where your code is hosted.
+
+**Q2: How does `main` differ from `origin`?**
+**`main` (The Local Branch):** The primary branch on your computer. It represents your local development progress.
+* **Note on `origin/main`**: This is a local "bookmark" of the remote branch. It only updates when you communicate with the server via `fetch` or `pull`.
+
+---
+
+## 🛠️ Practice
+
+
+📂 [Practice Files](https://github.com/YuiseoYule/LG_CNS_AM_Inspirecamp/tree/main/assets/2026-05-05-git-and-github/Practice/)
+
+
+![Sourcetree]({{ site.baseurl }}/assets/2026-05-05-git-and-github/SourcetreePractice.png)...
+
+
+---
+
