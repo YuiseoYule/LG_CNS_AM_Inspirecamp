@@ -89,6 +89,36 @@ In VS Code, developers utilize the **Extensions** menu (the icon with four squar
  
 * ---
 
+## HTML Basic Structure
+
+- **Hierarchy**: HTML consists of **tags**, which can contain **attributes**, which are assigned specific **values**.
+- **Rule**: Every opening tag must have a corresponding closing tag to properly encapsulate content.
+
+### Syntax Template
+`<tag attribute="value">Content</tag>`
+
+### Component Breakdown
+1. **Tag**: Defines the element type (e.g., `p`, `div`, `h1`).
+2. **Attribute**: Provides additional information about the element (e.g., `class`, `id`, `src`).
+3. **Value**: The specific setting for the attribute (e.g., `"header"`, `"main-image"`).
+
+---
+
+## CSS Syntax Overview
+
+- **Selector**: The target area (or "Selector") identifies the HTML element you wish to style.
+- **Declaration Block**: Styles are contained within curly braces `{}`.
+- **Key-Value Pairs**: Specific styling is applied using properties (keys) and values.
+
+### Syntax Template
+```css
+selector {
+    key: value;
+    key: value;
+}
+```
 
 
-* 
+📂 [Practice Files](https://github.com/YuiseoYule/LG_CNS_AM_Inspirecamp/tree/main/assets/2026-05-11-Webservice/Practice/)
+
+![Sourcetree]({{ site.baseurl }}/assets/2026-05-11-Webservice/Login.png)...
