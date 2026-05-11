@@ -7,7 +7,11 @@ categories: TIL
 
 # Today's lecture
 
+
+
 # 🎨 Deep Dive: Front-end Technology Stack & Modern Frameworks
+
+
 
 ### 1. The Core Trinity (Web Basics)
 The Front-end is the area where the system communicates with the user via the browser.
@@ -15,6 +19,8 @@ The Front-end is the area where the system communicates with the user via the br
 *   **HTML (Hypertext Markup Language):** The **Skeleton**. Defines the structure using semantic tags (e.g., `<table>`, `<form>`, `<header>`).
 *   **CSS (Cascading Style Sheets):** The **Decoration**. Handles styling, layout, and responsiveness.
 *   **JavaScript (JS):** The **Behavior**. Implements dynamic functions and handles user events.
+
+
 
 ---
 
@@ -24,12 +30,16 @@ While the browser ultimately renders HTML, the source files often differ based o
 *   **ASP (Active Server Pages):** HTML + C#/.NET (Microsoft ecosystem).
 *   **Transition:** Adding programming logic (Java/C#) transforms a static HTML page into a **Dynamic** resource.
 
+
+
 ---
 
 ### 3. Responsive Web Design (RWD)
 *   **Concept:** A single HTML file that adjusts its UI based on the screen resolution (Desktop vs. Mobile).
 *   **Media Queries:** The CSS technology used to detect resolution and apply different styles.
 *   **Bootstrap:** A popular CSS framework (template) that provides pre-built responsive components.
+
+
 
 ---
 
@@ -46,6 +56,8 @@ Unlike traditional websites that reload the entire page, SPAs load once and swap
 *   **React:** Classified as a **Library**. Uses `.jsx` (JavaScript XML) extensions. High flexibility where the developer controls the flow.
 *   **Vue.js:** Classified as a **Framework**. Uses `.vue` or `.js` files. Provides a more rigid structure/template for the developer to follow.
 
+
+
 ---
 
 ### 5. Library vs. Framework (The "Control" Factor)
@@ -59,6 +71,8 @@ The fundamental difference lies in **Inversion of Control (IoC)**:
 
 ---
 
+
+
 ## 🛠️ Deep Dive: IDE Selection & Web Server Fundamentals
 
 ### 1. IDE (Integrated Development Environment) Tools
@@ -70,6 +84,8 @@ Choosing the right tool depends on the language focus and the need for extensibi
 
 ---
 
+
+
 ### 2. Serving Web Resources
 To view web pages in a browser, a server must host the files.
 
@@ -80,6 +96,8 @@ To view web pages in a browser, a server must host the files.
 
 ---
 
+
+
 ### 3. Practical Setup in VS Code
 In VS Code, developers utilize the **Extensions** menu (the icon with four square blocks) to install local server tools.
 *   **The Workflow:**
@@ -88,6 +106,8 @@ In VS Code, developers utilize the **Extensions** menu (the icon with four squar
     3. Deploy or run the code to view the result in a **Browser**.
  
 * ---
+
+* 
 
 ## HTML Basic Structure
 
@@ -111,6 +131,8 @@ In VS Code, developers utilize the **Extensions** menu (the icon with four squar
 - **Key-Value Pairs**: Specific styling is applied using properties (keys) and values.
 
 ### Syntax Template
+
+
 ```css
 selector {
     key: value;
@@ -121,4 +143,4 @@ selector {
 
 📂 [Practice Files](https://github.com/YuiseoYule/LG_CNS_AM_Inspirecamp/tree/main/assets/2026-05-11-Webservice/Practice/)
 
-![Sourcetree]({{ site.baseurl }}/assets/2026-05-11-Webservice/Login.png)...
+![Login]({{ site.baseurl }}/assets/2026-05-11-Webservice/Login.png)...
